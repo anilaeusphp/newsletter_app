@@ -73,3 +73,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "passwordless", "~> 0.12.0"
+
+gem "solargraph", "~> 0.49.0"
+
+gem "erb-formatter", "~> 0.4.3"

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  passwordless_for :users
+
+  resources :users, only: [:new, :create]
+
+  get "static/members_only", to: "static#members_only"
+  root "static#index"
+
 end
